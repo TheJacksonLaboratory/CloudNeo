@@ -1,16 +1,3 @@
-## Start with the hadleyverse image from Rocker, then add population
-## genetics images on top.
-
-#FROM r-base:latest
-
-## Bioconductor packages (they may be dependencies)
-#RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); \ 
-#	biocLite(c("VariantAnnotation", "snpStats", "rtracklayer"));'
-#RUN install2.r -r http://bioconductor.org/packages/3.0/bioc --deps TRUE \
-#    BiocInstaller \
-#    VariantAnnotation \
-#    && rm -rf /tmp/downloaded_packages/
-
 # Install R
 FROM ubuntu:14.04
 
@@ -31,10 +18,5 @@ RUN add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" \
 RUN apt-get -y install libcurl4-gnutls-dev \
     libpcre++-dev \
     libxml2-dev
-
-# install bioconductor and then update a few other packages for R 3.1.1
-#RUN install2.r -r http://bioconductor.org/packages/3.0/bioc --deps TRUE \
-#    VariantAnnotation \
-#    && rm -rf /tmp/downloaded_packages/
 
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(c("VariantAnnotation", "snpStats"), ask=FALSE);'

@@ -7,10 +7,6 @@ RUN apt-get -y update \
     build-essential \
     zlib1g-dev
 
-# Install htslib
-ADD https://github.com/samtools/htslib/releases/download/1.3/htslib-1.3.tar.bz2 /tmp
-RUN cd /tmp/; tar -jxvf htslib-*; cd /tmp/htslib* && ./configure && make && make install
-
 # Install modules
 RUN apt-get -y install git \
     wget \
@@ -18,3 +14,10 @@ RUN apt-get -y install git \
     curl \
     vim \
     gzip
+
+WORKDIR /usr/local/bin
+RUN wget http://www.bcgsc.ca/platform/bioinfo/software/hlaminer/releases/1.3/HLAminer_v1-3.tar.gz
+RUN tar -zxvf HLAminer_v1-3.tar.gz
+
+RUN cd /usr/local/bin/HLAminer_v1.3/database && sh updateAll.sh
+RUN sed -i 's/\.\.\/database\/hla_nom_p.txt/\/usr\/local\/bin\/HLAminer_v1.3\/database\/hla_nom_p.txt/g' /usr/local/bin/HLAminer_v1.3/bin/HLAminer.pl 
