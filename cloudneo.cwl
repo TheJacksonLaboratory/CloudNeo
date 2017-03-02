@@ -194,7 +194,7 @@
           {
             "class": "DockerRequirement",
             "dockerImageId": "",
-            "dockerPull": "bwa"
+            "dockerPull": "bwa:cloudneo"
           }
         ],
         "class": "CommandLineTool",
@@ -433,7 +433,7 @@
           {
             "class": "DockerRequirement",
             "dockerImageId": "",
-            "dockerPull": "bwa"
+            "dockerPull": "bwa:cloudneo"
           }
         ],
         "class": "CommandLineTool",
@@ -529,7 +529,7 @@
           {
             "class": "DockerRequirement",
             "dockerImageId": "",
-            "dockerPull": "variant_effect_predictor:83"
+            "dockerPull": "variant-effect-predictor:cloudneo"
           },
           {
             "class": "sbg:CPURequirement",
@@ -3118,7 +3118,7 @@
           {
             "class": "DockerRequirement",
             "dockerImageId": "",
-            "dockerPull": "hlaminer"
+            "dockerPull": "hlaminer:cloudneo"
           },
           {
             "class": "sbg:CPURequirement",
@@ -3610,7 +3610,7 @@
           {
             "class": "DockerRequirement",
             "dockerImageId": "",
-            "dockerPull": "netmhcpan"
+            "dockerPull": "netmhcpan:cloudneo"
           }
         ],
         "class": "CommandLineTool",
@@ -3845,7 +3845,7 @@
           {
             "class": "DockerRequirement",
             "dockerImageId": "",
-            "dockerPull": "samtools"
+            "dockerPull": "samtools:cloudneo"
           },
           {
             "class": "sbg:CPURequirement",
@@ -4022,7 +4022,7 @@
           {
             "class": "DockerRequirement",
             "dockerImageId": "",
-            "dockerPull": "protein_translator"
+            "dockerPull": "vcf-parser:cloudneo"
           }
         ],
         "class": "CommandLineTool",
@@ -4269,7 +4269,7 @@
           {
             "class": "DockerRequirement",
             "dockerImageId": "",
-            "dockerPull": "bioc:latest"
+            "dockerPull": "protein-translator:cloudneo"
           }
         ],
         "class": "CommandLineTool",
