@@ -1,0 +1,40 @@
+{
+    "input_database_file": {
+        "class": "File", 
+        "path": "netmhcpan-3.0.imgt.fasta"
+    }, 
+    "vcf": true, 
+    "input_file": {
+        "class": "File", 
+        "path": "sample.vcf"
+    }, 
+    "minimum_score": "500", 
+    "input_reference_file": {
+        "class": "File", 
+        "path": "homo_sapiens_vep_83_GRCh37.tar.gz"
+    }, 
+    "html": true, 
+    "bool_single_end_reads_used": 1, 
+    "label_run_path": null, 
+    "input_gtf_1": {
+        "class": "File", 
+        "path": "Homo_sapiens.GRCh37.75.gtf"
+    }, 
+    "num_gap_extensions": 0, 
+    "input_csv_1": {
+        "class": "File", 
+        "path": "HumanProteins.GRCh37.75.csv"
+    }, 
+    "filter_common": true, 
+    "input_allele_database": {
+        "class": "File", 
+        "path": "HLA-I_II_CDS.fasta"
+    }, 
+    "maximum_number_of_gap_opens": 0, 
+    "input_bam": {
+        "class": "File", 
+        "path": "sample.bam"
+    },
+    "kmer_peptide_length": 10,
+    "peptide_length" : 9
+}
