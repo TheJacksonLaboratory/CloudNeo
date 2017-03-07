@@ -9,7 +9,7 @@ RUN apt-get -y update \
 RUN add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9 \
     && apt-get update \
-    && apt-get install -y r-base r-base-dev r-cran-rcurl libreadline-dev \
+    && apt-get install -y --force-yes r-base r-base-dev r-cran-rcurl libreadline-dev \
     && apt-get autoremove -y \
     && apt-get clean -y
 

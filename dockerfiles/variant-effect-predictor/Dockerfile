@@ -47,7 +47,3 @@ WORKDIR /opt/variant_effect_predictor_83/ensembl-tools-release-83/scripts/varian
 RUN perl INSTALL.pl --AUTO ap --PLUGINS LoF --CACHEDIR /opt/variant_effect_predictor_83/cache
 WORKDIR /opt/variant_effect_predictor_83/cache/Plugins
 RUN wget https://raw.githubusercontent.com/konradjk/loftee/master/splice_module.pl
-
-COPY Dockerfile /opt/
-MAINTAINER Milan Domazet, Seven Bridges Genomics, <milan.domazet@sbgenomics.com>
-
