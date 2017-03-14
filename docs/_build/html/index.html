@@ -90,7 +90,10 @@
             
               <!-- Local TOC -->
               <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to CloudNeo&#8217;s documentation!</a><ul>
+<li><a class="reference internal" href="#">Welcome to CloudNeo&#8217;s documentation!</a></li>
+<li><a class="reference internal" href="#inputs">Inputs</a></li>
+<li><a class="reference internal" href="#app-settings">App Settings</a></li>
+<li><a class="reference internal" href="#outputs">Outputs</a><ul>
 <li><a class="reference internal" href="#features">Features</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#contribute">Contribute</a></li>
@@ -98,7 +101,6 @@
 <li><a class="reference internal" href="#license">License</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 </div>
             
@@ -164,15 +166,262 @@
             
   <div class="section" id="welcome-to-cloudneo-s-documentation">
 <h1>Welcome to CloudNeo&#8217;s documentation!<a class="headerlink" href="#welcome-to-cloudneo-s-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+<p>CloudNeo: A cloud pipeline for identifying patient-specific tumor neoantigen. The workflow was developed on Seven Bridges Genomics&#8217; CGC platform.</p>
+<a class="reference internal image-reference" href="_images/main.png"><img alt="cloudneo main" class="align-center" src="_images/main.png" style="width: 600.0px; height: 300.0px;" /></a>
 </div>
-<p>$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.</p>
-<p>Look how easy it is to use:</p>
-<blockquote>
-<div>import project
-# Get your stuff done
-project.do_stuff()</div></blockquote>
+<div class="section" id="inputs">
+<h1>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="28%" />
+<col width="28%" />
+<col width="28%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>ID</strong></th>
+<th class="head"><strong>Label</strong></th>
+<th class="head"><strong>Type</strong></th>
+<th class="head">Required</th>
+<th class="head">Prefix</th>
+<th class="head">Format</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>input_bam</td>
+<td>input_bam</td>
+<td>File</td>
+<td>Yes</td>
+<td>&nbsp;</td>
+<td>BAM</td>
+</tr>
+<tr class="row-odd"><td>input_reference_file</td>
+<td>input_reference_file</td>
+<td>File</td>
+<td>No</td>
+<td>&nbsp;</td>
+<td>TAR.GZ</td>
+</tr>
+<tr class="row-even"><td>input_file</td>
+<td>input_file</td>
+<td>File</td>
+<td>Yes</td>
+<td>&nbsp;</td>
+<td>VCF TXT</td>
+</tr>
+<tr class="row-odd"><td>input_database_file</td>
+<td>input_database_file</td>
+<td>File</td>
+<td>No</td>
+<td>&nbsp;</td>
+<td>FASTA</td>
+</tr>
+<tr class="row-even"><td>input_allele_database</td>
+<td>input_allele_database</td>
+<td>File</td>
+<td>Yes</td>
+<td>&nbsp;</td>
+<td>fasta</td>
+</tr>
+<tr class="row-odd"><td>input_csv_1</td>
+<td>input_csv_1</td>
+<td>File</td>
+<td>No</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>input_gtf_1</td>
+<td>input_gtf_1</td>
+<td>File</td>
+<td>No</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="app-settings">
+<h1>App Settings<a class="headerlink" href="#app-settings" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>ID</strong></th>
+<th class="head"><strong>Label</strong></th>
+<th class="head"><strong>Type</strong></th>
+<th class="head">Required</th>
+<th class="head">Prefix</th>
+<th class="head">Default</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>num_gap_extensions</td>
+<td>maximum number of gap extensions</td>
+<td>int</td>
+<td>No</td>
+<td>-e</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>maximum_number_of_gap_opens</td>
+<td>maximum number or fraction of gap opens</td>
+<td>int</td>
+<td>No</td>
+<td>-o</td>
+<td>0</td>
+</tr>
+<tr class="row-even"><td>vcf</td>
+<td>Output as VCF file</td>
+<td>boolean</td>
+<td>No</td>
+<td>&#8211;vcf</td>
+<td>FALSE</td>
+</tr>
+<tr class="row-odd"><td>html</td>
+<td>HTML</td>
+<td>boolean</td>
+<td>No</td>
+<td>&#8211;html</td>
+<td>FALSE</td>
+</tr>
+<tr class="row-even"><td>filter_common</td>
+<td>Filter common</td>
+<td>boolean</td>
+<td>No</td>
+<td>&nbsp;</td>
+<td>FALSE</td>
+</tr>
+<tr class="row-odd"><td>minimum_score</td>
+<td>&nbsp;</td>
+<td>enum</td>
+<td>No</td>
+<td>-s</td>
+<td>500</td>
+</tr>
+<tr class="row-even"><td>label_run_name</td>
+<td>&nbsp;</td>
+<td>string</td>
+<td>No</td>
+<td>-l</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>bool_single_end_reads_used</td>
+<td>bool</td>
+<td>int</td>
+<td>No</td>
+<td>-e</td>
+<td>1</td>
+</tr>
+<tr class="row-even"><td>peptide_length</td>
+<td>peptide_length</td>
+<td>int</td>
+<td>No</td>
+<td>&nbsp;</td>
+<td>9</td>
+</tr>
+<tr class="row-odd"><td>peptide_length_1</td>
+<td>peptide_length</td>
+<td>int</td>
+<td>No</td>
+<td>&nbsp;</td>
+<td>9</td>
+</tr>
+<tr class="row-even"><td>kmer_peptide_length</td>
+<td>&nbsp;</td>
+<td>int</td>
+<td>No</td>
+<td>&nbsp;</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="outputs">
+<h1>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>ID</strong></th>
+<th class="head"><strong>Label</strong></th>
+<th class="head"><strong>Type</strong></th>
+<th class="head">Format</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>predictions_file</td>
+<td>predictions_file</td>
+<td>File</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>html_summary</td>
+<td>html_summary</td>
+<td>File</td>
+<td>HTML</td>
+</tr>
+<tr class="row-even"><td>html_output</td>
+<td>html_output</td>
+<td>File</td>
+<td>HTML</td>
+</tr>
+<tr class="row-odd"><td>vep_output</td>
+<td>vep_output</td>
+<td>File</td>
+<td>TEXT, JSON, VCF, GVF</td>
+</tr>
+<tr class="row-even"><td>output_vcf_file</td>
+<td>output_vcf_file</td>
+<td>File</td>
+<td>VCF</td>
+</tr>
+<tr class="row-odd"><td>tumor_fasta_1</td>
+<td>tumor_fasta_1</td>
+<td>File</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>output_xls</td>
+<td>output_xls</td>
+<td>File</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>control_fasta_1</td>
+<td>control_fasta_1</td>
+<td>File</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>netmhcpan_outputs_xls_2</td>
+<td>netmhcpan_outputs_xls_2</td>
+<td>File array</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>netmhcpan_outputs_txt_2</td>
+<td>netmhcpan_outputs_txt_2</td>
+<td>File array</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>netmhcpan_outputs_xls</td>
+<td>netmhcpan_outputs_xls</td>
+<td>File array</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>netmhcpan_outputs_txt</td>
+<td>netmhcpan_outputs_txt</td>
+<td>File array</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
 <div class="section" id="features">
 <h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -182,27 +431,18 @@ project.do_stuff()</div></blockquote>
 <div class="section" id="contribute">
 <h2>Contribute<a class="headerlink" href="#contribute" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Issue Tracker: github.com/$project/$project/issues</li>
-<li>Source Code: github.com/$project/$project</li>
+<li>Issue Tracker: <a class="reference external" href="https://github.com/TheJacksonLaboratory/CloudNeo/issues">https://github.com/TheJacksonLaboratory/CloudNeo/issues</a></li>
+<li>Source Code: <a class="reference external" href="https://github.com/TheJacksonLaboratory/CloudNeo">https://github.com/TheJacksonLaboratory/CloudNeo</a></li>
 </ul>
 </div>
 <div class="section" id="support">
 <h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
-<p>If you are having issues, please let us know.
-We have a mailing list located at: <a class="reference external" href="mailto:project&#37;&#52;&#48;google-groups&#46;com">project<span>&#64;</span>google-groups<span>&#46;</span>com</a></p>
+<p>If you are having issues, please let us know. Post your issues at <a class="reference external" href="https://github.com/TheJacksonLaboratory/CloudNeo/issues">CloudNeo Issues</a>.</p>
 </div>
 <div class="section" id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p>The project is licensed under the BSD license.</p>
+<p>The project is licensed under the Apache License Version 2.0 (APLv2)</p>
 </div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
-</ul>
 </div>
 
 
