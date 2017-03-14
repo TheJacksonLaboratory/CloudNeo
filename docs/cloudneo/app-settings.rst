@@ -4,6 +4,14 @@ App Settings
 .. toctree::
    :maxdepth: 1
 
+.. image:: ../images/define-settings.png
+    :width: 600px
+    :align: center
+    :height: 300px
+    :alt: alternate text
+
+Settings Defaults
+------------------
 .. csv-table::
    :header: "**ID**", "**Label**", "**Type**", "**Required**", "**Prefix**", "**Default**"
    :widths: 50, 50, 50, 50, 50, 50
