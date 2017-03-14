@@ -21,3 +21,34 @@ Outputs
    control_fasta,control_fasta,File,FASTA
    tumor_fasta,tumor_fasta,File,FASTA
 
+Outputs Details
+----------------
+**predictions_file**
+  the output file from HLAminer
+
+**html_summary**
+  The HTML output summary file from Variant Effect Predictor
+
+**vep_output**
+  The VEP annotated output VCF file 
+
+**output_vcf_file**
+  Formatted VCF file as input to netmhcpan
+
+**netmhcpan_outputs_xls**
+  netmhcpan outputs in XLS format
+
+**netmhcpan_outputs_txt**
+  netmhcpan outputs in TXT format
+
+**output_xls**
+  Intermediary file from protein translator
+
+**control_fasta**
+  control file without the mutation
+
+**tumor_fasta**
+  Fasta file with the mutation
+
+
+ 
