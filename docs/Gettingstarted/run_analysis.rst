@@ -51,39 +51,48 @@ Next, click on the 'Run' button (highlighted in the  screenshots) to create a dr
 
 Select input files
 ^^^^^^^^^^^^^^^^^^^^^
+Add the files that you would like to analyze to the project. The files must be in the project to select it as input. All the inputs are required for the CloudNeo app.
+
 .. image:: ../images/select-inputs.png
     :width: 600px
     :align: center
     :height: 300px
-    :alt: alternate text
+    :alt: select input files
 
-.. image:: ../images/inputs.png
-    :width: 600px
-    :align: center
-    :height: 300px
-    :alt: alternate text
+.. seealso:: More information on `uploading the files <http://docs.sevenbridges.com/docs/upload-to-the-seven-bridges-platform>`_ to the project.
 
 Define app settings
 ^^^^^^^^^^^^^^^^^^^^^
+The Seven Bridges CGC interface allowing you to change the app's setting before you submit the task. Click on the 'App Settings' tab to change any parameters. This is an optional step and the CloudNeo pipeline has a set of defaults that can be used.
+
 .. image:: ../images/define-settings.png
-    :width: 600px
+    :width: 300px
     :align: center
-    :height: 300px
+    :height: 100px
     :alt: alternate text
 
 Run the Analysis/Task
 ^^^^^^^^^^^^^^^^^^^^^
+Click on the 'Run' button (green button - shown below) to submit the task. 
 
 .. image:: ../images/run-task.png
-    :width: 600px
-    :align: center
-    :height: 300px
-    :alt: alternate text
+   :width: 600px
+   :align: center
+   :height: 300px
+   :alt: run the analysis
+
+.. seealso::  More information on how to `submit a task <http://docs.sevenbridges.com/docs/perform-batch-analysis>`_.
 
 View submitted Tasks
 ^^^^^^^^^^^^^^^^^^^^^
+The tasks submitted can be view in the 'Tasks' tabs as shown below.
+
 .. image:: ../images/view-tasks.png
-    :width: 600px
-    :align: center
-    :height: 300px
-    :alt: alternate text
+   :width: 600px
+   :align: center
+   :height: 300px
+   :alt: alternate text
+
+.. seealso::  More information on how to `view tasks <http://docs.sevenbridges.com/docs/review-task-page>`_.
+
+.. note:: The `entire documentation <http://docs.sevenbridges.com/docs/quickstart>`_ about the Seven Bridges Genomics Platfrom is `here <http://docs.sevenbridges.com/docs/quickstart>`_, along with the `tutorials <http://docs.sevenbridges.com/docs/seven-bridges-platform-tutorials>`_.
