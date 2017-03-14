@@ -2,5 +2,6 @@ Getting Started
 --------------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
+   run_analysis
