@@ -47,8 +47,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'CloudNeo'
-copyright = '2017, snamburi3'
-author = 'snamburi3'
+copyright = '2017, CloudNeo'
+author = 'Preeti Bais et al.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

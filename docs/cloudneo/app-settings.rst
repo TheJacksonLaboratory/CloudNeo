@@ -5,7 +5,7 @@ App Settings
    :maxdepth: 1
 
 .. csv-table::
-   :header: "**ID**", "**Label**", "**Type**", "Required", "Prefix", "Default"
+   :header: "**ID**", "**Label**", "**Type**", "**Required**", "**Prefix**", "**Default**"
    :widths: 50, 50, 50, 50, 50, 50
 
    num_gap_extensions,maximum number of gap extensions,int,No,-e,0

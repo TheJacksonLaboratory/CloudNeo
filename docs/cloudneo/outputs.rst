@@ -5,7 +5,7 @@ Outputs
    :maxdepth: 1
 
 .. csv-table::
-   :header: "**ID**", "**Label**", "**Type**", "Format"
+   :header: "**ID**", "**Label**", "**Type**", "**Format**"
    :widths: 50, 50, 50, 50
 
    predictions_file,predictions_file,File,TXT

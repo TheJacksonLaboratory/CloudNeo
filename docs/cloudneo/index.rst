@@ -1,5 +1,5 @@
-CloudNeo
-==========
+CloudNeo Parameters
+====================
 .. toctree::
    :maxdepth: 2
 
