@@ -128,7 +128,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'CloudNeo.tex', 'CloudNeo Documentation',
-     'snamburi3', 'manual'),
+     'cloudneo', 'manual'),
 ]
 
 
