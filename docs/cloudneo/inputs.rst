@@ -34,7 +34,7 @@ Input Details
   Input VCF file to call neoepitopes
 
 **input_database_file**
-  This is the IMGT hla_prot.fasta file for input to netmhcpan. The input file must be formatted as below:
+  This is the IMGT `hla_prot.fasta <ftp://ftp.ebi.ac.uk/pub/databases/ipd/imgt/hla/hla_prot.fasta>`_ file for input to netmhcpan. The input file must be formatted as below:
 
 .. code-block:: perl
  
