@@ -47,7 +47,7 @@ Input Details
 .. note:: instructions to build the IMGT/HLA database are here on `hlaminer github repository <https://github.com/warrenlr/HLAminer/tree/master/HLAminer_v1.3.1/database>`_.
 
 **input_gtf**
-  Input Homo sapiens GTF file from Ensembl: `Homo_sapiens.GRCh37.75.gtf.gz <https://github.com/TheJacksonLaboratory/CloudNeo/wiki/reference_files/HumanProteins.GRCh37.75.csv>`_.
+  Input Homo sapiens GTF file from Ensembl: `Homo_sapiens.GRCh37.75.gtf.gz <http://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz>`_.
 
 **input_csv**
   Human Proteins (GRCh37.75) file: `HumanProteins.GRCh37.75.csv <https://github.com/TheJacksonLaboratory/CloudNeo/wiki/reference_files/HumanProteins.GRCh37.75.csv>`_.
