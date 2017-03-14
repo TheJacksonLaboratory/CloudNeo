@@ -1,10 +1,10 @@
 Register for an account
 ------------------------
-Register for a account on the [Seven Bridges Cloud Platform](http://www.cancergenomicscloud.org/).
+Register for a account with the `Seven Bridges Cloud Platform <http://www.cancergenomicscloud.org/>`_.
 
 Create a Project
 --------------------------------------------
-Login to the account and create a `project <http://docs.sevenbridges.com/docs/projects-on-the-platform>`_ to do your analysis. Projects act as a container to store your data, apps, workflows. You can create a project by clicking on 'Create a Project' button, as highlighted in the screenshot.
+Login to the account and create a `project <http://docs.sevenbridges.com/docs/projects-on-the-platform>`_ to do your analysis. Projects act as a container to store your data, apps, workflows. You can create a project by clicking on 'Create a Project' button, as highlighted in the below screenshot.
 
 .. image:: ../images/create-project.png
     :width: 600px
