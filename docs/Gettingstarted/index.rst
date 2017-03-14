@@ -4,4 +4,4 @@ Getting Started
 .. toctree::
    :maxdepth: 2
 
-   run_analysis
+   run_analysis.rtd
