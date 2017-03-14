@@ -15,3 +15,17 @@ Inputs
    input_allele_database,input_allele_database,File,Yes,,fasta
    input_csv_1,input_csv_1,File,No,,
    input_gtf_1,input_gtf_1,File,No,,
+
+
+**input_bam** 
+  Input BAM file to call neoepitopes
+
+**input_reference_file** 
+  This is the Variant Effect Predictor reference file. This can be downloaded from the following link.  `homo_sapiens_vep_83_GRCh37.tar.gz <http://ftp.ensembl.org/pub/grch37/release-83/variation/VEP/homo_sapiens_vep_83_GRCh37.tar.gz>`_
+
+
+
+
+**Variant Effect Predictor reference file** [homo_sapiens_vep_83_GRCh37.tar.gz](http://ftp.ensembl.org/pub/grch37/release-83/variation/VEP/homo_sapiens_vep_83_GRCh37.tar.gz).
+* Hlaminer/IMGT database: [HLA-I_II_CDS.fasta](https://github.com/warrenlr/HLAminer/blob/master/HLAminer_v1.3.1/database/HLA-I_II_CDS.fasta). The reference files can be obtained from the [same link](https://github.com/warrenlr/HLAminer/tree/master/HLAminer_v1.3.1/database). (all files starting with HLA-I_II_CDS.* must be copied)
+
