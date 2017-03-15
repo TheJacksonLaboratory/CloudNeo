@@ -42,10 +42,20 @@ Input Details
   cat hla_prot.fasta |  perl -ne 'chomp;if(/\>\S+\s+(\S+)/){print ">$1\n";}else{print "$_\n";}' > netmhcpan-3.0.imgt.fasta
 
 **input_allele_database**
-  This is the Hlaminer/IMGT database file: `HLA-I_II_CDS.fasta <https://github.com/warrenlr/HLAminer/blob/master/HLAminer_v1.3.1/database/HLA-I_II_CDS.fasta>`_. The reference files can be obtained from the same link. (all files starting with HLA-I_II_CDS.* must be copied)
+  This is the Hlaminer/IMGT database file, which can be downloaded from the following link: `HLAminer Database <https://github.com/warrenlr/HLAminer/blob/master/HLAminer_v1.3.1/database>`_. The index files can be obtained from the same link. 
+
+  **RNA-Seq data analysis**
+    All files starting with HLA-I_II_CDS.* must be copied for RNA-seq analysis. The HLA-I_II_CDS.fasta comprises all IMGT/HLA HLA CDS (including class I and II).
+
+  **DNA-Seq data analysis**
+    All files starting with HLA-I_II_GEN.* must be copied for DNA-seq analysis. The HLA-I_II_GEN.fasta comprises all IMGT/HLA HLA genomic sequences (including class I and II).
 
 .. note:: instructions to build the IMGT/HLA database are here on `hlaminer github repository <https://github.com/warrenlr/HLAminer/tree/master/HLAminer_v1.3.1/database>`_.
 
+   If you would like to update the coding sequences database(HLA-I_II_CDS.fasta), the `instructions are provided here  <https://github.com/warrenlr/HLAminer/blob/master/HLAminer_v1.3.1/database/updateHLA-I_II_coding.sh>`_ on the HLAminer github repository.
+
+   If you would like to update the genomics sequences database(HLA-I_II_GEN.fasta), the `instructions are provided <https://github.com/warrenlr/HLAminer/blob/master/HLAminer_v1.3.1/database/updateHLA-I_II_genomic.sh>`_ here on the HLAminer github repository. 
+   
 **input_gtf**
   Input Homo sapiens GTF file from Ensembl: `Homo_sapiens.GRCh37.75.gtf.gz <http://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz>`_.
 
