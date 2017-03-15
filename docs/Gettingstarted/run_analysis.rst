@@ -40,7 +40,7 @@ Once the App as been copied to your project, it will be available in the 'Apps' 
 
 Next, click on the 'Run' button (highlighted in the  screenshots) to create a draft task.
 
-.. image:: ../images/create-project.png
+.. image:: ../images/run-task.png
     :width: 600px
     :align: center
     :height: 300px
