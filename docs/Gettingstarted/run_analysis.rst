@@ -62,7 +62,7 @@ Add the files that you would like to analyze to the project. The files must be i
 
 Define app settings
 ^^^^^^^^^^^^^^^^^^^^^
-The Seven Bridges CGC interface allowing you to change the app's setting before you submit the task. Click on the 'App Settings' tab to change any parameters. This is an optional step and the CloudNeo pipeline has a set of defaults that can be used.
+The Seven Bridges CGC interface allows you to change the app's setting before you submit the task. Click on the 'App Settings' tab to change any parameters. This is an optional step and the CloudNeo pipeline has a set of defaults that can be used.
 
 .. image:: ../images/define-settings.png
     :width: 300px
