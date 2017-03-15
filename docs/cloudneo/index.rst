@@ -7,8 +7,6 @@ CloudNeo App
     :height: 600px
     :alt: cloudneo main
 
-Parameters
-------------
 .. toctree::
    :maxdepth: 2
 
