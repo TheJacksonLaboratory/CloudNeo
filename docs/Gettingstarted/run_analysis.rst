@@ -46,8 +46,7 @@ Next, click on the 'Run' button (highlighted in the  screenshots) to create a dr
     :height: 300px
     :alt: alternate text
 
-.. seealso::  More information on how to create a `project <http://docs.sevenbridges.com/docs/projects-on-the-platform>`_
- is `available here <http://docs.sevenbridges.com/docs/create-a-project>`_.
+.. seealso::  More information on how to `create a draft task <http://docs.sevenbridges.com/docs/draft-task>`_.
 
 Select input files
 ^^^^^^^^^^^^^^^^^^^^^
