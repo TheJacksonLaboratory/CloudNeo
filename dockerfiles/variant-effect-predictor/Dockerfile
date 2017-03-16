@@ -1,4 +1,6 @@
 FROM ubuntu:14.04
+
+# install some basic tools
 RUN apt-get update && apt-get install -y \
 	autoconf \
 	automake \
@@ -27,6 +29,7 @@ RUN cpanm CPAN::Meta \
 	DBD::SQLite \
 	Set::IntervalTree
 
+# install samtools
 WORKDIR /opt
 RUN wget https://github.com/samtools/samtools/releases/download/1.2/samtools-1.2.tar.bz2
 RUN tar jxf samtools-1.2.tar.bz2

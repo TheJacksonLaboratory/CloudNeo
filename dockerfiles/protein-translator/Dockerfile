@@ -19,4 +19,5 @@ RUN apt-get -y install libcurl4-gnutls-dev \
     libpcre++-dev \
     libxml2-dev
 
+# install the required modules. The Rscript is run from the CWL itself, not from the docker image
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(c("VariantAnnotation", "snpStats"), ask=FALSE);'

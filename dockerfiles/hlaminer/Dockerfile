@@ -15,6 +15,7 @@ RUN apt-get -y install git \
     vim \
     gzip
 
+# install HLAminer
 WORKDIR /usr/local/bin
 RUN wget http://www.bcgsc.ca/platform/bioinfo/software/hlaminer/releases/1.3/HLAminer_v1-3.tar.gz
 RUN tar -zxvf HLAminer_v1-3.tar.gz
