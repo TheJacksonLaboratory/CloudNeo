@@ -21,3 +21,5 @@ RUN apt-get -y install libcurl4-gnutls-dev \
 
 # install the required modules. The Rscript is run from the CWL itself, not from the docker image
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(c("VariantAnnotation", "snpStats"), ask=FALSE);'
+
+# the Rscript is embedded in the CWl itself. It is not copied into the docker image. This Dockerfile can be extended or used with other Rscripts.
