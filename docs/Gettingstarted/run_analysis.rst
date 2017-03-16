@@ -4,7 +4,7 @@ Register for a account with the `Seven Bridges Cloud Platform <http://www.cancer
 
 Create a Project
 --------------------------------------------
-Login to the account and create a `project <http://docs.sevenbridges.com/docs/projects-on-the-platform>`_ to do your analysis. Projects act as a container to store your data, apps, workflows. You can create a project by clicking on 'Create a Project' button, as highlighted in the below screenshot.
+Login to the account and create a `project <http://docs.sevenbridges.com/docs/projects-on-the-platform>`_ to do your analysis. Projects act as a container to store your data, apps, and workflows. You can create a project by clicking on 'Create a Project' button, as highlighted in the below screenshot.
 
 .. image:: ../images/create-project.png
     :width: 600px
@@ -30,7 +30,7 @@ Running the CloudNeo App
 
 Creating a draft task
 ^^^^^^^^^^^^^^^^^^^^^
-Once the App as been copied to your project, it will be available in the 'Apps' tab as shown below in the example screenshot.
+Once the App has been copied to your project, it will be available in the 'Apps' tab as shown below in the example screenshot.
 
 .. image:: ../images/create-draft1.png
     :width: 600px
@@ -84,7 +84,7 @@ Click on the 'Run' button (green button - shown below) to submit the task.
 
 View submitted Tasks
 ^^^^^^^^^^^^^^^^^^^^^
-The tasks submitted can be view in the 'Tasks' tabs as shown below.
+The tasks submitted can be viewed in the 'Tasks' tabs as shown below.
 
 .. image:: ../images/view-tasks.png
    :width: 600px
