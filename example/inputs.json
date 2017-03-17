@@ -16,12 +16,12 @@
     "html": true, 
     "bool_single_end_reads_used": 1, 
     "label_run_path": null, 
-    "input_gtf_1": {
+    "input_gtf": {
         "class": "File", 
         "path": "Homo_sapiens.GRCh37.75.gtf"
     }, 
     "num_gap_extensions": 0, 
-    "input_csv_1": {
+    "input_csv": {
         "class": "File", 
         "path": "HumanProteins.GRCh37.75.csv"
     }, 

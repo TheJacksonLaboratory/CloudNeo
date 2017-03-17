@@ -8,3 +8,4 @@ RUN apt-get -y update \
     python-software-properties \
     build-essential
 
+# the Python script is embedded in the CWl itself. It is not copied into the docker image. This Dockerfile can be extended or used with scripts.
