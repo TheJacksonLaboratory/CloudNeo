@@ -94,4 +94,28 @@ The tasks submitted can be viewed in the 'Tasks' tabs as shown below.
 
 .. seealso::  More information on how to `view tasks <http://docs.sevenbridges.com/docs/review-task-page>`_.
 
+Finding tools on CGC
+-----------------------
+
+The public apps developed by Seven Bridges can be `accessed directly on the platform <https://cgc.sbgenomics.com/public/apps>`_. Click on the 'Public Apps' tabs on the CGC platfrom as shown below. The URL can be directly accessed at: https://cgc.sbgenomics.com/public/apps.  
+
+.. image:: ../images/search-app.png
+   :width: 600px
+   :align: center
+   :height: 300px
+   :alt: run the analysis
+
+You can search for the tools on the same page. The below screenshot shows the `search result <https://cgc.sbgenomics.com/public/apps#q?search=VCFtools>`_ for VCftools.
+
+.. image:: ../images/search-vcftools.png
+   :width: 600px
+   :align: center
+   :height: 300px
+   :alt: run the analysis
+
+
+.. seealso::  More information on how to `search for a tool or app <http://docs.sevenbridges.com/docs/search-for-an-app>`_.
+
+.. seealso:: More information on how to `bring your own tool <http://docs.sevenbridges.com/docs/sdk-overview>`_ to Seven Bridges Genomics Platform.
+
 .. note:: The `entire documentation <http://docs.sevenbridges.com/docs/quickstart>`_ about the Seven Bridges Genomics Platfrom is `here <http://docs.sevenbridges.com/docs/quickstart>`_, along with the `tutorials <http://docs.sevenbridges.com/docs/seven-bridges-platform-tutorials>`_.
