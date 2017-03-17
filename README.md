@@ -8,4 +8,4 @@ The workflow was developed on Seven Bridges Genomics' CGC platfrom in CWL- Draft
 
 ### Running the CloudNeo workflow
 - For running CloudNeo on CGC, please refer to this [manual](http://cloudneo.readthedocs.io/en/latest/).
-- For running CloudNeo with Rabix, please refer to this [wiki](https://github.com/TheJacksonLaboratory/CloudNeo/wiki).
+- For running CloudNeo CWL with Rabix, please refer to this [wiki](https://github.com/TheJacksonLaboratory/CloudNeo/wiki).
