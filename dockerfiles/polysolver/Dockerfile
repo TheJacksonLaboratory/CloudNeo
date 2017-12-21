@@ -72,7 +72,15 @@ RUN cd /usr/local/bin; tar -xvf /tmp/polysolver*.tar.gz; rm -rf /tmp/polysolver*
 RUN apt-get clean
 RUN rm -rf /tmp/*
 
+RUN wget http://sourceforge.net/projects/samtools/files/samtools/0.1.18/samtools-0.1.18.tar.bz2 && mv samtools-0.1.* /tmp
+RUN cd /tmp && tar -jxvf samtools-0.1.18.tar.bz2 && cd samtools-0.1.18
+WORKDIR /tmp/samtools-0.1.18
+RUN make CFLAGS=-fPIC
+RUN export SAMTOOLS=/tmp/samtools-0.1.18
+ENV SAMTOOLS /tmp/samtools-0.1.18
 RUN cpanm -v --force Bio::DB::Sam
+
+#RUN cpanm -v --force Bio::DB::Sam
 
 ENV PSHOME /usr/local/bin/polysolver
 ENV SAMTOOLS_DIR /usr/bin
