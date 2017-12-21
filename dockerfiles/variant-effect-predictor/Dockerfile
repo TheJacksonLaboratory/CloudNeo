@@ -49,4 +49,10 @@ RUN rm 83.zip
 WORKDIR /opt/variant_effect_predictor_83/ensembl-tools-release-83/scripts/variant_effect_predictor/
 RUN perl INSTALL.pl --AUTO ap --PLUGINS LoF --CACHEDIR /opt/variant_effect_predictor_83/cache
 WORKDIR /opt/variant_effect_predictor_83/cache/Plugins
-RUN wget https://raw.githubusercontent.com/konradjk/loftee/master/splice_module.pl
+
+# copy splice_module.pl 
+RUN wget https://github.com/konradjk/loftee/archive/v0.3-beta.zip
+RUN unzip v0.3-beta.zip
+RUN cp loftee-0.3-beta/splice_module.pl .  
+RUN rm -rf v0.3-beta.zip loftee-0.3-beta
+#https://raw.githubusercontent.com/konradjk/loftee/master/splice_module.pl
