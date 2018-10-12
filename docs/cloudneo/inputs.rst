@@ -60,4 +60,4 @@ Input Details
   Input Homo sapiens GTF file from Ensembl: `Homo_sapiens.GRCh37.75.gtf.gz <http://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz>`_.
 
 **input_csv**
-  Human Proteins (GRCh37.75) file: `HumanProteins.GRCh37.75.csv <https://github.com/TheJacksonLaboratory/CloudNeo/wiki/reference_files/HumanProteins.GRCh37.75.csv>`_.
+  Human Proteins (GRCh37.75) file: `HumanProteins.GRCh37.75.csv <https://github.com/TheJacksonLaboratory/CloudNeo/raw/master/reference_files/HumanProteins.GRCh37.75.csv>`_.
